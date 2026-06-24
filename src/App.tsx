@@ -175,7 +175,7 @@ export default function App() {
                 className="group relative flex flex-col justify-between p-6 bg-[#09090B] hover:bg-[#09090B]/80 border border-[#18181B] hover:border-[#3B82F6]/40 rounded-none transition-all duration-300 overflow-hidden"
               >
                 {/* Background ambient accent */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#3B82F6]/2 rounded-none blur-2xl group-hover:bg-[#3B82F6]/5 transition-all duration-500" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#3B82F6]/2 rounded-none blur-2xl group-hover:bg-[#3B82F6]/5 transition-all duration-500 pointer-events-none" />
                 
                 <div>
                   <div className="flex items-center justify-between mb-4">
@@ -189,10 +189,9 @@ export default function App() {
                           <a 
                             href={project.githubLink} 
                             target="_blank" 
-                            rel="noreferrer" 
+                            rel="noopener noreferrer" 
                             className="text-[#71717A] hover:text-white transition-colors cursor-pointer"
                             title="Source Code"
-                            onClick={(e) => e.stopPropagation()}
                           >
                             <Github className="w-3.5 h-3.5" />
                           </a>
@@ -201,10 +200,9 @@ export default function App() {
                           <a 
                             href={project.liveLink} 
                             target="_blank" 
-                            rel="noreferrer" 
+                            rel="noopener noreferrer" 
                             className="text-[#71717A] hover:text-[#3B82F6] transition-colors cursor-pointer"
                             title="Live Demo"
-                            onClick={(e) => e.stopPropagation()}
                           >
                             <ExternalLink className="w-3.5 h-3.5" />
                           </a>
