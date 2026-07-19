@@ -10,10 +10,24 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
   font-family: var(--font-sans);
   background-color: #050505;
   color: #FAFAFA;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
 }
 
 /* Custom subtle scrollbar style */
